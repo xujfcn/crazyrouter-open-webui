@@ -2,7 +2,7 @@
 
 > Deploy Open WebUI with 300+ AI models through Crazyrouter — One API key, 45% cheaper.
 
-[Crazyrouter](https://crazyrouter.com?ref=github) — AI API gateway for all major models.
+[Crazyrouter](https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community?ref=github) — AI API gateway for all major models.
 
 ## 💰 Price Comparison
 
@@ -18,7 +18,7 @@
 docker run -d \
   --name open-webui \
   -p 3000:8080 \
-  -e OPENAI_API_BASE_URL=https://crazyrouter.com/v1 \
+  -e OPENAI_API_BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1 \
   -e OPENAI_API_KEY=sk-your-crazyrouter-key \
   -v open-webui:/app/backend/data \
   ghcr.io/open-webui/open-webui:main
@@ -36,7 +36,7 @@ services:
     ports:
       - "3000:8080"
     environment:
-      - OPENAI_API_BASE_URL=https://crazyrouter.com/v1
+      - OPENAI_API_BASE_URL=https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1
       - OPENAI_API_KEY=sk-your-crazyrouter-key
     volumes:
       - open-webui-data:/app/backend/data
@@ -61,7 +61,7 @@ docker compose up -d
 
 | Variable | Value | Description |
 |----------|-------|-------------|
-| `OPENAI_API_BASE_URL` | `https://crazyrouter.com/v1` | Crazyrouter endpoint |
+| `OPENAI_API_BASE_URL` | `https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community/v1` | Crazyrouter endpoint |
 | `OPENAI_API_KEY` | `sk-your-key` | Your Crazyrouter key |
 
 ## ❓ FAQ
@@ -76,7 +76,7 @@ A: Yes! Crazyrouter provides Claude, GPT, Gemini, and 300+ models through one AP
 A: `docker pull ghcr.io/open-webui/open-webui:main && docker compose up -d`
 
 ## 🔗 Links
-- 🌐 [Crazyrouter](https://crazyrouter.com?ref=github) | 🌐 [Open WebUI](https://github.com/open-webui/open-webui) | 💬 [Telegram](https://t.me/crzrouter)
+- 🌐 [Crazyrouter](https://crazyrouter.com?utm_source=github&utm_medium=github&utm_campaign=dev_community?ref=github) | 🌐 [Open WebUI](https://github.com/open-webui/open-webui) | 💬 [Telegram](https://t.me/crzrouter)
 
 ## 📄 License
 MIT
